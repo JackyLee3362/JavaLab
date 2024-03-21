@@ -20,4 +20,4 @@ logging:
 mybatis-plus:
   configuration:
     map-underscore-to-camel-case: true
-  type-aliases-package: cn.itcast.hotel.pojo
+  type-aliases-package: com.example.pojo
