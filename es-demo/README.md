@@ -54,7 +54,7 @@ docker run --name mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=$env:MYSQL_ROOT_PASS
 docker run --name mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=%MYSQL_ROOT_PASSWORD% -d mysql
 ```
 
-使用 navicat 连接数据库后，创建 heima 数据库，并执行脚本， `res/tb_hotel.sql`
+使用 navicat 连接数据库后，创建 `hotel` 数据库，并执行脚本 `res/tb_hotel.sql`
 
 ### 🚀启动 mq 项目
 
@@ -84,7 +84,14 @@ docker run -e RABBITMQ_DEFAULT_USER=mymq -e RABBITMQ_DEFAULT_PASS=123456 --name 
 
 使用 RabbitMQ 进行同步，文件使用 `hotel-admin`
 
-首先启动 `hotel-admin` 项目，然后进行测试
+启动 `hotel-admin` 项目（和 mysql 相关）
 
-## 
+启动 `hotel-demo` 项目（和 es相关）
+
+1. 通过【网页】对 hotel-admin 中的数据进行修改
+2. 然后查看 es 是否也进行了更改
+3. 这里其实可以有改进，就是增加事务的特性，因为 数据库 可能更新失败，所以必须要同时成功，或者同时失败，这里就涉及到了如何添加事务
+
+todo: hotel-admin 中【新增】酒店会失败，为什么（大概是因为 entity/Hotel中的 id 是 INPUT ？）
+
 

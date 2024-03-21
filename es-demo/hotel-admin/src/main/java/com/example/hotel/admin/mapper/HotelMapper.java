@@ -1,6 +1,6 @@
 package com.example.hotel.admin.mapper;
 
-import com.example.hotel.admin.pojo.Hotel;
+import com.example.hotel.admin.entity.Hotel;
 
 import org.apache.ibatis.annotations.Mapper;
 

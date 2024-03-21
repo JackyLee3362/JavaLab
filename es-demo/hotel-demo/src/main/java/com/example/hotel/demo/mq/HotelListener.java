@@ -27,7 +27,7 @@ public class HotelListener {
     @RabbitListener(queues = MqConstants.HOTEL_INSERT_QUEUE)
     public void listenHotelInsertOrUpdate(Long id) {
         iHotelService.insertById(id);
-        log.info("Listener需要修改的id是{}", id);
+        log.info("监听器：新增或更新的id是{}", id);
     }
 
     /**
@@ -40,6 +40,6 @@ public class HotelListener {
     @RabbitListener(queues = MqConstants.HOTEL_DELETE_QUEUE)
     public void listenHotelDelete(Long id) {
         iHotelService.deleteById(id);
-        log.info("Listener需要删除的id是{}", id);
+        log.info("监听器：删除的id是{}", id);
     }
 }

@@ -1,4 +1,4 @@
-package com.example.hotel.admin.pojo;
+package com.example.hotel.admin.entity;
 
 import lombok.Data;
 

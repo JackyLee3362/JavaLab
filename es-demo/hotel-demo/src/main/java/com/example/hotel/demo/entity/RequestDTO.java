@@ -1,4 +1,4 @@
-package com.example.hotel.demo.pojo;
+package com.example.hotel.demo.entity;
 
 import lombok.Data;
 

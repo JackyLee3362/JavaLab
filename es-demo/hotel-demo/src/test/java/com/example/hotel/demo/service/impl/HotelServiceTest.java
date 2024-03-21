@@ -1,6 +1,6 @@
 package com.example.hotel.demo.service.impl;
 
-import com.example.hotel.demo.pojo.RequestDTO;
+import com.example.hotel.demo.entity.RequestDTO;
 import com.example.hotel.demo.service.IHotelService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

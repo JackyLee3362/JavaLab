@@ -1,6 +1,6 @@
 package com.example.hotel.demo;
 
-import com.example.hotel.demo.pojo.HotelDoc;
+import com.example.hotel.demo.entity.HotelDoc;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.http.HttpHost;
 import org.elasticsearch.action.search.SearchRequest;

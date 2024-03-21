@@ -1,6 +1,6 @@
 package com.example.hotel.demo.common;
 
-import com.example.hotel.demo.pojo.HotelDoc;
+import com.example.hotel.demo.entity.HotelDoc;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

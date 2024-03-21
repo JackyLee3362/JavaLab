@@ -2,9 +2,9 @@ package com.example.hotel.demo.service.impl;
 
 import com.example.hotel.demo.common.PageResult;
 import com.example.hotel.demo.mapper.HotelMapper;
-import com.example.hotel.demo.pojo.Hotel;
-import com.example.hotel.demo.pojo.HotelDoc;
-import com.example.hotel.demo.pojo.RequestDTO;
+import com.example.hotel.demo.entity.Hotel;
+import com.example.hotel.demo.entity.HotelDoc;
+import com.example.hotel.demo.entity.RequestDTO;
 import com.example.hotel.demo.service.IHotelService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.fasterxml.jackson.core.JsonProcessingException;

@@ -1,7 +1,7 @@
 package com.example.hotel.demo;
 
-import com.example.hotel.demo.pojo.Hotel;
-import com.example.hotel.demo.pojo.HotelDoc;
+import com.example.hotel.demo.entity.Hotel;
+import com.example.hotel.demo.entity.HotelDoc;
 import com.example.hotel.demo.service.IHotelService;
 
 import com.fasterxml.jackson.databind.ObjectMapper;

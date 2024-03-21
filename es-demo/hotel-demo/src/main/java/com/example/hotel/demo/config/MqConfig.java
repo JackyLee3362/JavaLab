@@ -27,8 +27,7 @@ public class MqConfig {
                 .bind(hotelInsertQueue())
                 .to(topicExchange())
                 .with(MqConstants.HOTEL_INSERT_KEY)
-                .noargs()
-                ;
+                .noargs();
     }
 
     @Bean
@@ -37,7 +36,6 @@ public class MqConfig {
                 .bind(hotelDeleteQueue())
                 .to(topicExchange())
                 .with(MqConstants.HOTEL_DELETE_KEY)
-                .noargs()
-                ;
+                .noargs();
     }
 }

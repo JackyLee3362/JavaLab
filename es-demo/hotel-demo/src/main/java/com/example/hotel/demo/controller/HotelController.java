@@ -1,7 +1,7 @@
 package com.example.hotel.demo.controller;
 
 import com.example.hotel.demo.common.PageResult;
-import com.example.hotel.demo.pojo.RequestDTO;
+import com.example.hotel.demo.entity.RequestDTO;
 import com.example.hotel.demo.service.IHotelService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
