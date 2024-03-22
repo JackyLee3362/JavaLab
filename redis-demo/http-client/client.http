@@ -1,0 +1,8 @@
+@host = http://localhost:8080
+
+### 设置变量 num=111
+GET {{host}}/set/num/111 HTTP/1.1
+
+### 获得变量 num
+GET {{host}}/get/num HTTP/1.1
+
