@@ -60,7 +60,8 @@ public class HotelController {
     public void saveHotel(@RequestBody Hotel hotel) {
         hotelService.save(hotel);
         rabbitTemplate.convertAndSend(MqConstants.HOTEL_EXCHANGE, MqConstants.HOTEL_INSERT_KEY, hotel.getId());
-        log.info("新增酒店" + String.format(msg, MqConstants.HOTEL_EXCHANGE, MqConstants.HOTEL_INSERT_KEY, hotel.getId(), hotel.getName()));
+        log.info("新增酒店" + String.format(msg, MqConstants.HOTEL_EXCHANGE, MqConstants.HOTEL_INSERT_KEY, hotel.getId(),
+                hotel.getName()));
     }
 
     /**
@@ -75,11 +76,12 @@ public class HotelController {
         }
         hotelService.updateById(hotel);
         // 手动抛出一个错误，让更新只在数据库层面
-        if (true) {
+        if (hotel.getId() == 36934) {
             throw new RuntimeException();
         }
         rabbitTemplate.convertAndSend(MqConstants.HOTEL_EXCHANGE, MqConstants.HOTEL_INSERT_KEY, hotel.getId());
-        log.info("更新酒店" + String.format(msg, MqConstants.HOTEL_EXCHANGE, MqConstants.HOTEL_INSERT_KEY, hotel.getId(), hotel.getName()));
+        log.info("更新酒店" + String.format(msg, MqConstants.HOTEL_EXCHANGE, MqConstants.HOTEL_INSERT_KEY, hotel.getId(),
+                hotel.getName()));
     }
 
     /**
