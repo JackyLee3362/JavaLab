@@ -1,0 +1,6 @@
+@host = http://localhost:8080
+
+GET {{host}}/hello?id=123 HTTP/1.1
+
+### 
+GET {{host}}/hello?id=456 HTTP/1.1
