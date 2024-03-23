@@ -45,7 +45,6 @@ public class HotelDoc {
             this.suggestion.add(this.brand);
             Collections.addAll(this.suggestion, arr);
         } else {
-
             this.suggestion = Arrays.asList(this.brand, this.business);
         }
     }

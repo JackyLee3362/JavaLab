@@ -4,13 +4,13 @@ DELETE /test
 // 创建自动补全的索引库
 PUT /test
 {
-  "mappings": {
-    "properties": {
-      "title":{
-        "type": "completion"
-      }
+    "mappings": {
+        "properties": {
+            "title": {
+                "type": "completion"
+            }
+        }
     }
-  }
 }
 // 示例数据 1
 POST /test/_doc/1

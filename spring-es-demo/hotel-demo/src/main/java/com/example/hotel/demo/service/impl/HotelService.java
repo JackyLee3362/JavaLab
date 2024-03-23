@@ -134,7 +134,7 @@ public class HotelService extends ServiceImpl<HotelMapper, Hotel> implements IHo
 
     /**
      * @param id
-     * @description: 根据id在elasticSearch中新增相关Hotel
+     * @description: 根据 id 在 elasticSearch 中新增相关 Hotel
      * @return: void
      * @author: Jacky Lee
      * @date: 2024/1/21 22:58

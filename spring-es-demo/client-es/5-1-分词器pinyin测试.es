@@ -27,7 +27,8 @@ PUT /test
         "properties": {
             "name": {
                 "type": "text",
-                "analyzer": "my_analyzer"
+                "analyzer": "my_analyzer",
+                "search_analyzer": "ik_smart"
             }
         }
     }
