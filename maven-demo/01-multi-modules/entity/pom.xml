@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.example</groupId>
+    <artifactId>entity</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+    <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.12</version>
+            <!--当将依赖项的作用范围设置为 provided 时，
+            表示该依赖项在编译和测试阶段由构建工具（例如 Maven）提供，
+            但在运行时不会包含在最终构建的应用程序或部署包中。
+            这意味着在编译和测试代码时可以使用该依赖项，
+            但在运行时需要确保该依赖项已经由目标环境或服务器提供。-->
+            <scope>provided</scope>
+        </dependency>
+
+    </dependencies>
+
+</project>
